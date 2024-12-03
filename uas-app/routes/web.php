@@ -26,7 +26,7 @@ Route::post('/mahasiswa', [MahasiswaController::class, 'store'])->name("mahasisw
 Route::get('/mahasiswa/{id}/edit', [MahasiswaController::class, 'edit'])->name("mahasiswa-edit");
 Route::put('/mahasiswa/{id}', [MahasiswaController::class, 'update'])->name("mahasiswa-update");
 Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'destroy'])->name("mahasiswa-deleted");
-
+Route::get('/mahasiswa/export/excel', [MahasiswaController::class, 'exportExcel'])->name("mahasiswa-export-excel");
 
 
 require __DIR__.'/auth.php';
