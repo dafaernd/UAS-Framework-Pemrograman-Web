@@ -20,7 +20,6 @@
                                     {{ $error }}
                                 @endforeach
                             </div>
-
                         @endif
 
                         <form action="{{ route('mahasiswa-update', $mahasiswa->id) }}" method="POST"
